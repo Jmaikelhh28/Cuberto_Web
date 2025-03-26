@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    padding: 40px;
+}
+
+.section-1 {
+    background-color: #F5EEF5;
+    text-align: center;
+}
+.section-1 h3 {
+    font-size: 18px; 
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.section-1 h1 {
+    font-size: 62px; 
+    font-weight: bold;
+    color: #008080; /* Ajusta al color azul-verde del ejemplo */
+    text-align: left;
+}
+
+.section-2 {
+    background-color: #FAF5F3;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    
+}
+.content {
+    width: 50%;
+    padding: 20px;
+}
+
+.content h3 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+    font-size: 64px;
+    font-weight: lighter;
+}
+
+.content p:first-of-type {
+    font-size: 24px;
+    color: #707070; /* Color gris similar al ejemplo */
+    font-weight: lighter;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    font-size: 44px;
+    
+}
+
+.content p:last-of-type {
+    font-size: 36px;
+    color: #000000;
+    font-weight: normal;
+}
+
+.section-3 {
+    background-color: #F2F9F8;
+    display: flex;
+}
+
+.section-4 {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+}
+
+.content {
+    width: 50%;
+    padding: 20px;
+}
+
+.image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 768px) {
+    .section {
+        padding: 20px;
+    }
+
+    .section-1 h1 {
+        font-size: 32px; /* Reducir tamaño del título */
+        text-align: center;
+    }
+
+    .section-1 h3 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .section-2, .section-3 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content, .image {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .content h3 {
+        font-size: 36px;
+    }
+
+    .content p:first-of-type {
+        font-size: 20px;
+    }
+
+    .content p:last-of-type {
+        font-size: 24px;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
